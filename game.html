@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="setup">
+            <select id="mode">
+                <option value="player">Play with Another Player</option>
+                <option value="computer">Play with Computer</option>
+            </select>
+            <button id="startButton">Start Game</button>
+        </div>
+        <p class="instructions">Click on any cell to make your move. The first player to align three marks in a row, column, or diagonal wins!</p>
+        <div class="game-area">
+            <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <div class="winner-display" id="winnerDisplay">
+                <div data-winning-message-text></div>
+                <div class="quote" id="quote"></div>
+                <div class="emoji" id="emoji"></div>
+            </div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
